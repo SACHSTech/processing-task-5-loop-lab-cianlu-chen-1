@@ -45,7 +45,7 @@ public class Sketch extends PApplet {
     rect(900, 0, 300, 300);
   }
   
-  public void draw_section1(){/**
+  public void draw_section1(){
     int intX = 0;
     int intY = 0;
 
@@ -58,10 +58,10 @@ public class Sketch extends PApplet {
         noStroke();
         rect(intX, intY, 5, 5);
       }
-    }*/
+    }
   }
 
-  public void draw_section2(){/**
+  public void draw_section2(){
     int intX = 300;
     int intY = 0;
     int intColourShift = 255;
@@ -76,10 +76,10 @@ public class Sketch extends PApplet {
         noStroke();
         rect(intX, intY, 5, 5);
       }    
-    }*/
+    }
   }
 
-  public void draw_section3(){/**
+  public void draw_section3(){
     int intX = 600;
     int intY = 0;
     int intColourShift = 255;
@@ -94,10 +94,10 @@ public class Sketch extends PApplet {
         intColourShift = intColourShift * -1;
         noStroke();
       }    
-    }*/
+    }
   }
 
-  public void draw_section4(){ /**
+  public void draw_section4(){ 
     int intX = 900;
     int intY = 0;
     int intColourShift = 255; 
@@ -122,16 +122,16 @@ public class Sketch extends PApplet {
         noStroke();
         rect(intX, intY, 5, 5);
       }
-    }*/
+    }
   }
 
   public void draw_section5(){
     int intX = 0;
     int intY = 0;
 
-    for(int intRow = 300; intRow >= 0; intRow -= 10){
-      for(int intColumn = 10; intColumn <= intRow; intColumn += 10){
-        intX = 3 + intRow;
+    for(int intRow = 10; intRow <= 300; intRow += 10){
+      for(int intColumn = 290; intColumn >= intRow; intColumn -= 10){
+        intX = 300 - intRow + 3;
         intY = 3 + intColumn;
 
         fill(255);
@@ -141,12 +141,12 @@ public class Sketch extends PApplet {
     }
   }
 
-  public void draw_section6(){/**
+  public void draw_section6(){
     int intX = 0;
     int intY = 0;
 
     for(int intRow = 0; intRow <= 300; intRow += 10){
-      for(int intColumn = 10; intColumn >= intRow; intColumn += 10){
+      for(int intColumn = 290; intColumn >= intRow; intColumn -= 10){
         intX = 300 + 3 + intRow;
         intY = 3 + intColumn;
 
@@ -154,16 +154,16 @@ public class Sketch extends PApplet {
         noStroke();
         rect(intX, intY, 5, 5);
       }
-    }*/
+    }
   }
 
   public void draw_section7(){
     int intX = 0;
     int intY = 0;
 
-    for(int intRow = 0; intRow <= 0; intRow += 10){
-      for(int intColumn = 300; intColumn >= intRow; intColumn -= 10){
-        intX = 600 + 3 + intRow;
+    for(int intRow = 290; intRow >= 0; intRow -= 10){
+      for(int intColumn = 0; intColumn <= intRow; intColumn += 10){
+        intX = 600 + 3 + 290 - intRow;
         intY = 3 + intColumn;
 
         fill(255);
@@ -173,7 +173,7 @@ public class Sketch extends PApplet {
     }
   }
   
-  public void draw_section8(){/**
+  public void draw_section8(){
     int intX = 0;
     int intY = 0;
 
@@ -186,6 +186,6 @@ public class Sketch extends PApplet {
         noStroke();
         rect(intX, intY, 5, 5);
       }
-    }*/
+    }
   }
 }
