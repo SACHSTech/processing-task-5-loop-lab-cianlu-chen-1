@@ -25,9 +25,7 @@ public class Sketch extends PApplet {
   }
 
 
-  /**
-   * Draw the outlines for all sections
-   */
+  //Draw the outlines for all sections
   public void draw_section_outlines(){
     stroke(0);
     noFill();
@@ -114,6 +112,7 @@ public class Sketch extends PApplet {
       }    
     }
 
+    // Line of black squares ever other row
     for(int intColumn = 0; intColumn < 300; intColumn += 20){
       for(int intRow = 0; intRow < 300; intRow += 10){
         intX = 900 + 3 + intRow;
